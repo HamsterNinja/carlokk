@@ -1,0 +1,28 @@
+@import 'normalize';
+
+html {
+    box-sizing: border-box;
+    height: 100%;
+    font-size: 16px;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    background: #fff;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+
+@import 'buttons';
+@import 'header';
+@import 'footer';
+@import 'media-requests';
