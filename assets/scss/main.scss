@@ -9,19 +9,203 @@ html {
 *,
 *::before,
 *::after {
-    box-sizing: inherit;
+    box-sizing: border-box;
+    outline: none;
+    -moz-appearance: none;
+	-webkit-appearance: none;
 }
 
 body {
     background: #fff;
+    font-family: 'Open Sans', sans-serif;
 }
 
 img {
     max-width: 100%;
 }
+.swiper-button-next:after, .swiper-button-prev:after{
+	display: none;
+}
+.container{
+	max-width: 1230px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+.main-slider {
+    background: url(../images/bg_car.jpg);
+    background-size: cover;
+    background-position: 50%;
+    position: relative;
+}
+.main-slider:after{
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(33, 42, 51, 0.93);
+}
+.main-slider .swiper-slide {
+    height: 100vh;
+    padding-top: 255px;
+    overflow: hidden;
+}
+.main-slider .swiper-slide .container {
+    position: relative;
+    z-index: 3;
+}
+h2.main-swiper-header-title {
+    font-weight: bold;
+    font-size: 72px;
+    line-height: 105.69%;
+    color: #FFFFFF;
+    max-width: 740px;
+    margin: 0 0 25px 0;
+    font-family: 'Roboto', sans-serif;
+}
+.main-swiper-header-text {
+    font-size: 20px;
+    line-height: 150.18%;
+    color: rgba(255, 255, 255, 0.62);
+    max-width: 550px;
+    margin-bottom: 54px;
+}
+.main-swiper-header-link {
+    width: 186px;
+    height: 56px;
+    background: #E6691A;
+    box-shadow: 0px 0px 43px rgba(255, 150, 2, 0.07);
+    border-radius: 5px;
+}
+.main-swiper-header-link a {
+    width: 100%;
+    height: 53px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(99.43deg, #FF9602 24.93%, #FF8901 44.75%, #FF6600 81.31%), #E30613;
+    box-shadow: 0px 0px 43px rgba(255, 150, 2, 0.27);
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.preview-pagi {
+    position: absolute;
+    left: calc((100% - 1230px) / 2);
+    width: 200px;
+    bottom: 70px;
+}
+span.swiper-pagination-current {
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 107.18%;
+    color: #FFFFFF;
+}
+.swiper-pagination.swiper-pagination-fraction {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 107.18%;
+    color: #FFFFFF;
+    position: relative;
+    bottom: 6px;
+    user-select: none;
+}
+.main-slider .swiper-button-next, .main-slider .swiper-button-prev {
+    border-radius: 50%;
+    border: 1px solid rgba(255,255,255,0.4);
+    width: 36px;
+    height: 36px;
+    z-index: 99;
+    user-select: none;
+    transition: 0.3s ease;
+}
+.main-slider .swiper-button-prev {
+    left: 0;
+}
+.main-slider .swiper-button-next {
+    right: 0;
+}
 
+.parallax-blocks {
+    bottom: 370px;
+}
+.parallax-block_1, .parallax-block_2, .parallax-block_3, .parallax-block_4 {
+    text-align: right;
+    top: auto !important;
+    bottom: 0;
+    width: 100%;
+}
+.parallax-block_2 {
+    z-index: 2;
+}
+.parallax-block_4 {
+    bottom: -15px;
+}
+.parallax-block_1 img{
+	transform: translate(40px, 0px);
+}
+.parallax-block_2 img {
+    transform: translate(-420px, 0px);
+}
+.parallax-block_3 img {
+    transform: translate(-720px, 0px);
+}
+.parallax-block_4 img{
+	transform: translate(40px, 0px);
+}
+#scene_2 .parallax-block_1 img {
+    transform: translate(40px, -30%);
+}
+#scene_3 .parallax-block_1 img {
+    transform: translate(40px, -25%);
+}
+#scene_3 .parallax-block_3 img {
+    transform: translate(72px, 0px);
+}
+#scene_3 .parallax-block_4 img {
+    transform: translate(40px, -40px);
+}
 
+@-webkit-keyframes fade {
 
+    0%,
+    100% {
+        opacity: 0
+    }
+
+    50% {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+
+    0%,
+    100% {
+        opacity: 0
+    }
+
+    50% {
+        opacity: 1
+    }
+}
+.mouse {
+    background: url(../images/mouse.svg) center no-repeat;
+    width: 23px;
+    height: 36px;
+    position: absolute;
+    z-index: 1;
+    left: calc(50% - 12px);
+    bottom: 40px;
+    -webkit-animation: 2s ease-in-out infinite fade;
+    animation: 2s ease-in-out infinite fade;
+}
 @import 'buttons';
 @import 'header';
 @import 'footer';

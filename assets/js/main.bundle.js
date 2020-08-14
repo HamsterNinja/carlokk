@@ -63,7 +63,7 @@
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "297c637d6408c977ef1c";
+/******/ 	var hotCurrentHash = "99f2621b547d8e1aeac4";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -1051,7 +1051,7 @@ eval("var logLevel = \"info\";\n\nfunction dummy() {}\n\nfunction shouldLog(leve
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\n//# sourceURL=webpack:///./js/src/app.js?");
+eval("\n\nvar swiper = new Swiper('.swiper-container.main-swiper', {\n  slidesPerView: 1,\n  loop: false,\n  allowTouchMove: false,\n  navigation: {\n    nextEl: '.main-swiper .swiper-button-next',\n    prevEl: '.main-swiper .swiper-button-prev'\n  },\n  pagination: {\n    el: '.swiper-pagination',\n    type: 'fraction',\n    formatFractionCurrent: function formatFractionCurrent(number) {\n      if (number < 10) {\n        number = number;\n      }\n\n      return number;\n    },\n    formatFractionTotal: function formatFractionTotal(number) {\n      if (number < 10) {\n        number = number;\n      }\n\n      return number;\n    }\n  }\n});\nvar scene1 = document.getElementById('scene_1');\nvar parallaxInstance1 = new Parallax(scene1);\nvar scene2 = document.getElementById('scene_2');\nvar parallaxInstance2 = new Parallax(scene2);\nvar scene3 = document.getElementById('scene_3');\nvar parallaxInstance3 = new Parallax(scene3);\n\n//# sourceURL=webpack:///./js/src/app.js?");
 
 /***/ }),
 
