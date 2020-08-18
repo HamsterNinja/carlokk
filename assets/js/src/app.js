@@ -24,6 +24,15 @@ var swiper = new Swiper('.swiper-container.main-swiper', {
     }
 });
 
+var swiper = new Swiper('.swiper-container.marks-swiper', {
+      slidesPerView: 5,
+       navigation: {
+        nextEl: '.marks_block-slider .swiper-button-next',
+        prevEl: '.marks_block-slider .swiper-button-prev',
+      },
+  });
+
+
 var scene1 = document.getElementById('scene_1');
 var parallaxInstance1 = new Parallax(scene1);
 
@@ -32,3 +41,7 @@ var parallaxInstance2 = new Parallax(scene2);
 
 var scene3 = document.getElementById('scene_3');
 var parallaxInstance3 = new Parallax(scene3);
+
+$(document).ready(function() {
+  $("#whydef").twentytwenty();
+})

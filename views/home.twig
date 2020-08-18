@@ -49,6 +49,198 @@
 	</div>
 	<div class="mouse"></div>
 </div>
+<div class="marks_block">
+	<div class="container">
+		<div class="main-page-title">Проверено CarLokk</div>
+		<div class="main-page-under-title"><a href="">найди</a> свою модель</div>
+		<div class="marks_block-slider">
+		<div class="swiper-container marks-swiper">
+			<div class="swiper-wrapper">
+			{% for item in 0..5 %}
+				<div class="swiper-slide marks-swiper-header">
+					<img src="{{ site.theme.link }}/assets/images/lada.png" alt="">
+				</div>
+			{% endfor %}
+			</div>
+			<div class="swiper-button-prev">
+				<svg width="9" height="15" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M8 1L1 7.5 8 14" stroke="#212A33"/>
+				</svg>
+			</div>
+			<div class="swiper-button-next">
+				<svg width="9" height="15" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M1 14l7-6.5L1 1" stroke="#212A33"/>
+				</svg>
+			</div>
+		</div>
+		</div>
+	</div>
+</div>
+<div class="why-we_block">
+	<div class="container">
+		<div class="why-we-title"><b>8 причин</b> выбрать CarLokk</div>
+		<div class="why-we-under-title">и остаться довольным покупкой</div>
+		<div class="why-we-content">
+			<ul>
+				<li><b>Увеличение срока эксплуатации</b> лакокрасочного покрытия задних колёсных арок автомобиля на ВЕСЬ срок эксплуатации автомобиля. (Исключение ДТП).</li>
+				<li><b>Защита от сколов</b> Камни, которые попадают в протектор автомобильной шины, застревают в нём, а затем под воздействием инерционной силы вылетают из протектора, попадая в торец колёсной арки, образуя тем самым скол. </li>
+				<li><b>Универсальность</b> (подходит для большинства марок легковых автомобилей) </li>
+				<li><b>Простота <a href="">установки</a></b> защиты</li>
+				<li><b>Экономия на перекраске автомобиля</b> лакокрасочного покрытия задних колёсных арок автомобиля на ВЕСЬ срок эксплуатации автомобиля. (Исключение ДТП).</li>
+				<li><b>Защита</b> от уменьшения покупной стоимости автомобиля. (в связи с перекраской защитных арок)</li>
+				<li><b>Не страдает эстетика</b> автомобиля (изделие практически незаметно)</li>
+				<li><b>Сохранение отличного товарного вида</b> автомобиля (отсутствие сколов и царапин)</li>
+			</ul>
+		</div>	
+	</div>	
+</div>
+<div class="why-def_block">
+	<div class="container">
+		<div class="why-def_block-content">
+			<div class="why-def-title">Почему нужно защищать автомобильные арки</div>
+			<div class="why-def-text">
+				<p>Данное изделие защищает от прямого попадания (контакта) камней, снега, дождя, реагентов, грязи непосредственно в лакокрасочное покрытие торцевой части колёсной арки, тем самым сохраняя лакокрасочное покрытие на весь срок эксплуатации автомобиля.</p>
+			</div>
+		</div>
+	</div>
+	<div class="whydef-content">
+		<div class="main-whydef-image"><img src="{{site.theme.link}}/assets/images/car-main.png" alt=""></div>
+		<div id="whydef">
+			<div class="image-whydef"><img src="{{site.theme.link}}/assets/images/not_rzha.jpg" /></div>
+			<div class="image-whydef"><img src="{{site.theme.link}}/assets/images/rzha.jpg" /></div>
+		</div>
+	</div>
+</div>
 
+<div class="advantages_block">
+	<div class="container">
+		<div class="advantages-title">Преимущества по сравнению с бронеплёнкой</div>
+		<div class="advantages-content">
+			<div class="advantages-check">
+				<div class="advantages-content-name">Арки</div>
+				<ul>
+					<li>Долговечность</li>
+					<li>Прочность изделия (автомобильный пластик = полноценная защита) на весь срок эксплуатации автомобиля</li>
+					<li>Цена: до 2 500 руб.</li>
+					<li>Простота установки</li>
+				</ul>
+			</div>
+			<img class="versus" src="{{ site.theme.link }}/assets/images/vs.png" alt="">
+			<div class="advantages-uncheck">
+				<div class="advantages-content-name">Бронеплёнка</div>
+				<ul>
+					<li>Срок эксплуатации 2 года</li>
+					<li>Защита до 10%  ( по сравнению с арками, камни пробивают пленку, она отклеивается и требует переклейки новой плёнкой. При этом также требуется покраска крыльев автомобиля)</li>
+					<li>Цена: от 15 000 руб.</li>
+					<li>Сложная и долгая установка</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="our-documents">
+	<div class="container">
+		<div class="main-page-title">Наши документы</div>
+		<div class="our-documents-content">
+			{% for item in 0..1 %}
+			<div class="document-item">
+				<a class="document-item-image" href="">
+					<img src="{{ site.theme.link }}/assets/images/doc.jpg" alt="">
+				</a>
+				<div class="document-item-info">
+					<div class="document-item-name">Название документа</div>
+					<div class="document-item-text">Данное изделие защищает от прямого попадания (контакта) камней, снега, дождя, реагентов, грязи непосредственно в лакокрасочное покрытие торцевой части колёсной арки, тем самым сохраняя лакокрасочное покрытие на весь срок эксплуатации автомобиля</div>
+				</div>
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+</div>
+<div class="products_block">
+	<div class="container">
+		<div class="product-info">
+			<div class="product-info-title">ОФОРМИ ПРЕДЗАКАЗ</div>
+			<div class="products-info-date">с 27 августа по 1 октября</div>
+			<div class="products-description">
+				Данное изделие защищает от прямого попадания (контакта) камней, снега, дождя, реагенто.
+			</div>
+			<div class="product-compectation">
+				<div class="product-compectation-row">
+					<div class="product-compectation-name">Комплектация:</div>
+					<div class="product-compectation-value">арки, клей...</div>
+				</div>
+				<div class="product-compectation-row">
+					<div class="product-compectation-name">Вес:</div>
+					<div class="product-compectation-value">584 гр</div>
+				</div>
+			</div>
+			<div class="product-info-bottom">
+				<div class="product-info-price">
+					<div class="product-info-price-name">Стоимость</div>
+					<div class="product-info-price-value">2 000 рублей</div>
+				</div>
+				<div class="product-buy"><a href="">Добавить в корзину</a></div>
+			</div>
+		</div>
+		<div class="product-images">
+			<div class="swiper-container marks-swiper">
+			{% for item in 0..5 %}
+			  	<div class="swiper-wrapper">
+					<div class="swiper-slide marks-swiper-header">
+						<img src="{{ site.theme.link }}/assets/images/lada.png" alt="">
+					</div>
+				</div>
+			{% endfor %}
+				<div class="swiper-button-prev">
+					<svg width="9" height="15" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M8 1L1 7.5 8 14" stroke="#212A33"/>
+					</svg>
+				</div>
+				<div class="swiper-button-next">
+					<svg width="9" height="15" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M1 14l7-6.5L1 1" stroke="#212A33"/>
+					</svg>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="instructions_block">
+	<div class="container">
+		<div class="instructions-info">
+			<div class="instructions-info-title">Инструкция</div>
+			<div class="instructions-info-text">В рамках спецификации современных стандартов, реплицированные с зарубежных источников, современные исследования представляют собой не что иное, как квинтэссенцию победы маркетинга над разумом и должны быть ограничены исключительно образом мышления. И нет сомнений, что представители современных социальных резервов лишь добавляют фракционных разногласий и в равной степени предоставлены сами себе. Значимость этих проблем настолько очевидна, что социально-экономическое развитие играет определяющее значение для системы массового участия.</div>
+			<div class="instructions-info-files">
+				{% for item in 0..1 %}
+				<a href="" class="file-item">
+					<div class="file-item-name">Название файла</div>
+					<div class="file-item-size">245 кб</div>
+					<div class="file-item-link">Скачать</div>
+				</a>
+				{% endfor %}
+			</div>
+		</div>
+		<div class="instructions-video">
+			<div class="swiper-container main-swiper">
+			  	<div class="swiper-wrapper">
+			  		{% for item in 0..3 %}
+					<div class="swiper-slide main-swiper-header">
+						<div class="video-block youtube" data-embed="UTgijnMNr6s" data-aos="fade-up">
+		        		<div class="play-button">
+		            		<img src="{{ site.theme.link }}/assets/images/play.png" alt="">
+		        		</div> 
+		    			<img src="https://img.youtube.com/vi/UTgijnMNr6s/sddefault.jpg"></div>
+					</div>
+			  		{% endfor %}
+				</div>
+				<div class="preview-pagi">
+					<div class="swiper-button-prev"><svg width="9" height="15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 1L1 7.5 8 14" stroke="#fff"/></svg></div>
+					<div class="swiper-pagination"></div>
+					<div class="swiper-button-next"><svg width="9" height="15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 14l7-6.5L1 1" stroke="#fff"/></svg></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 </main>
 {% include "partials/footer.twig" %}
