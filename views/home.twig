@@ -159,7 +159,7 @@
 <div class="products_block">
 	<div class="container">
 		<div class="product-info">
-			<div class="product-info-title">ОФОРМИ ПРЕДЗАКАЗ</div>
+			<div class="product-info-title">Оформи предзаказ</div>
 			<div class="products-info-date">с 27 августа по 1 октября</div>
 			<div class="products-description">
 				Данное изделие защищает от прямого попадания (контакта) камней, снега, дождя, реагенто.
@@ -183,23 +183,18 @@
 			</div>
 		</div>
 		<div class="product-images">
-			<div class="swiper-container marks-swiper">
-			{% for item in 0..5 %}
+			<div class="swiper-container product-swiper">
 			  	<div class="swiper-wrapper">
-					<div class="swiper-slide marks-swiper-header">
-						<img src="{{ site.theme.link }}/assets/images/lada.png" alt="">
+				{% for item in 0..5 %}
+					<div class="swiper-slide product-swiper-header">
+						<img src="{{ site.theme.link }}/assets/images/gal.jpg" alt="">
 					</div>
+				{% endfor %}
 				</div>
-			{% endfor %}
-				<div class="swiper-button-prev">
-					<svg width="9" height="15" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path d="M8 1L1 7.5 8 14" stroke="#212A33"/>
-					</svg>
-				</div>
-				<div class="swiper-button-next">
-					<svg width="9" height="15" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path d="M1 14l7-6.5L1 1" stroke="#212A33"/>
-					</svg>
+				<div class="preview-pagi _product">
+					<div class="swiper-button-prev"><svg width="9" height="15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 1L1 7.5 8 14" stroke="#FF6601"/></svg></div>
+					<div class="swiper-pagination"></div>
+					<div class="swiper-button-next"><svg width="9" height="15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 14l7-6.5L1 1" stroke="#FF6601"/></svg></div>
 				</div>
 			</div>
 		</div>
@@ -226,17 +221,19 @@
 			  		{% for item in 0..3 %}
 					<div class="swiper-slide main-swiper-header">
 						<div class="video-block youtube" data-embed="UTgijnMNr6s" data-aos="fade-up">
-		        		<div class="play-button">
-		            		<img src="{{ site.theme.link }}/assets/images/play.png" alt="">
-		        		</div> 
-		    			<img src="https://img.youtube.com/vi/UTgijnMNr6s/sddefault.jpg"></div>
+			        		<div class="play-button">
+			            		<img src="{{ site.theme.link }}/assets/images/play.svg" alt="">
+			        		</div> 
+			    			<img src="https://img.youtube.com/vi/UTgijnMNr6s/sddefault.jpg">
+		    			</div>
+		    			<div class="video-name">Инструкция такая-то</div>
 					</div>
 			  		{% endfor %}
 				</div>
 				<div class="preview-pagi">
-					<div class="swiper-button-prev"><svg width="9" height="15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 1L1 7.5 8 14" stroke="#fff"/></svg></div>
+					<div class="swiper-button-prev"><svg width="9" height="15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 1L1 7.5 8 14" stroke="#FF6601"/></svg></div>
 					<div class="swiper-pagination"></div>
-					<div class="swiper-button-next"><svg width="9" height="15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 14l7-6.5L1 1" stroke="#fff"/></svg></div>
+					<div class="swiper-button-next"><svg width="9" height="15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 14l7-6.5L1 1" stroke="#FF6601"/></svg></div>
 				</div>
 			</div>
 		</div>

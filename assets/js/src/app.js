@@ -32,6 +32,31 @@ var swiper = new Swiper('.swiper-container.marks-swiper', {
       },
   });
 
+var swiper = new Swiper('.swiper-container.product-swiper', {
+      slidesPerView: 1,
+      loop: false,
+      allowTouchMove: false,
+      navigation: {
+      nextEl: '.product-images .swiper-button-next',
+      prevEl: '.product-images .swiper-button-prev',
+    },
+    pagination: {
+     el: '.swiper-pagination',
+     type: 'fraction',
+     formatFractionCurrent: function(number) {
+   if (number < 10) {
+   number =  number;
+   }
+   return number;
+   },
+   formatFractionTotal: function(number) {
+   if (number < 10) {
+   number = number;
+   }
+   return number;
+   },
+    }
+});
 
 var scene1 = document.getElementById('scene_1');
 var parallaxInstance1 = new Parallax(scene1);
