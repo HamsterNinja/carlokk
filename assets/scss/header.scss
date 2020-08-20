@@ -1,9 +1,15 @@
-header.main-header {
+body.home header.main-header {
     position: absolute;
     z-index: 2;
     left: 0;
     right: 0;
     top: 0;
+    background-color: transparent;
+    padding: 0;
+}
+.main-header{
+    background-color: #212A33;
+    padding: 14px 0;
 }
 header.main-header .container {
     display: flex;

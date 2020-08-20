@@ -35,6 +35,7 @@
   "main": "index.js",
   "keywords": [],
   "dependencies": {
+    "@babel/preset-env": "^7.11.0",
     "babel-loader": "^8.1.0",
     "babel-preset-latest": "^6.24.1"
   }

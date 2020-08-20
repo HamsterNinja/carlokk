@@ -113,7 +113,63 @@ label.checkbox {
     margin-right: 7px;
     margin-top: 2px;
 }
-
+.checkbox-mark:before {
+    content: '';
+    width: 0px;
+    height: 1px;
+    border-radius: 2px;
+    background: #626262;
+    position: absolute;
+    transform: rotate(45deg);
+    top: 7px;
+    left: 4px;
+    transition: width 50ms ease 50ms;
+    transform-origin: 0% 0%;
+}
+.checkbox-mark:after {
+    content: '';
+    width: 0;
+    height: 1px;
+    border-radius: 2px;
+    background: #626262;
+    position: absolute;
+    transform: rotate(305deg);
+    top: 11px;
+    left: 7px;
+    transition: width 50ms ease;
+    transform-origin: 0% 0%;
+}
+.checkbox:hover .checkbox-mark:before {
+  width: 5px;
+  transition: width 100ms ease;
+}
+.checkbox:hover .checkbox-mark:after {
+  width: 10px;
+  transition: width 150ms ease 100ms;
+}
+.checkbox input[type='checkbox']:checked + .checkbox-mark:after {
+  width: 10px;
+  background: #333;
+  transition: width 150ms ease 100ms;
+}
+.checkbox input[type='checkbox']:checked + .checkbox-mark:before {
+  width: 5px;
+  background: #333;
+  transition: width 150ms ease 100ms;
+}
+.checkbox input[type='checkbox']:checked:hover + .checkbox-mark {
+  background-color: #dcdcdc;
+}
+.checkbox input[type='checkbox']:checked:hover + .checkbox-mark:after {
+  width: 10px;
+  background: #333;
+  transition: width 150ms ease 100ms;
+}
+.checkbox input[type='checkbox']:checked:hover + .checkbox-mark:before {
+  width: 5px;
+  background: #333;
+  transition: width 150ms ease 100ms;
+}
 .privacy-policy-agree.form-group {
     display: flex;
     flex-wrap: wrap;

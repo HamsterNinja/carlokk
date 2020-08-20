@@ -43,7 +43,7 @@ let config = {
         query: {
           presets: [
             [
-              'latest',
+              '@babel/preset-env',
               {
                 modules: false,
               },

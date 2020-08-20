@@ -1,0 +1,37 @@
+{% include "partials/header.twig" %}
+<main class='main-content' id="app">
+	<div class="page-reviews-content">
+		<div class="container">
+			<div class="reviews-header">	
+				<h1 class="reviews-title">Отзывы</h1>
+				<div class="reviews-link"><a href="">Оставить отзыв</a></div>
+			</div>
+			<div class="reviews-under-title">покупателей о нас</div>
+		</div>
+
+		<div class="swiper-container swiper-reviews">
+    		<div class="swiper-wrapper">
+    		{% for item in 0..4 %}
+    			 <div class="swiper-slide slide-review">
+    			 	<div class="slide-review-content">
+    			 		<div class="slide-review-date">29.05.20</div>
+    			 		<div class="slide-review-name">Александр</div>
+    			 		<div class="slide-review-text">Кстати,  некоторые особенности внутренней политики будут ограничены исключительно образом мышления. Лишь диаграммы связей формируют глобальную экономическую сеть и при этом -  обнародованы. Внезапно, некоторые особенности внутренней политики, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут обнародованы. Сложно сказать, почему представители современных социальных резервов лишь добавляют фракционных разногласий.</div>
+    			 		<div class="slide-review-gallery">
+    			 			{% for item in 0..3 %}
+    			 			<a href="" class="gallery-item">
+    			 				<img src="{{ site.theme.link }}/assets/images/rev.jpg" alt="">
+    			 			</a>
+    			 			{% endfor %}
+    			 		</div>
+    			 	</div>
+    			 </div>
+    		{% endfor %}
+    		 
+    		</div>
+    		<!-- Add Pagination -->
+    		<div class="swiper-pagination"></div>
+		</div>
+	</div>
+</main>
+{% include "partials/footer.twig" %}
