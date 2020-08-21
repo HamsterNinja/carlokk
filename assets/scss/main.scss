@@ -1368,9 +1368,25 @@ a.gallery-item {
 }
 .swiper-container.swiper-reviews .swiper-button-prev {
     left: calc(50% - 465px);
+    border: 1px solid rgba(255, 255, 255, 0.36);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
 }
 .swiper-container.swiper-reviews .swiper-button-next {
     right: calc(50% - 465px);
+    border: 1px solid rgba(255, 255, 255, 0.36);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+.swiper-container.swiper-reviews .swiper-button-prev:hover,
+.swiper-container.swiper-reviews .swiper-button-next:hover{
+    border: 1px solid rgba(255, 102, 1, 0.36);
+}
+.swiper-container.swiper-reviews .swiper-button-prev:hover svg path,
+.swiper-container.swiper-reviews .swiper-button-next:hover svg path{
+    stroke: #FF6601;
 }
 @import 'buttons';
 @import 'header';
